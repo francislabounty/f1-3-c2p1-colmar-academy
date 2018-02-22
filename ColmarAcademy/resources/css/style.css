@@ -1,0 +1,666 @@
+/* Main */
+/* Color Pallete https://coolors.co/000000-ffffff-34f6f2-001f54-c5cac6 */
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-content {
+  top: 4rem;
+  position: relative;
+}
+
+.column {
+  flex-direction: column;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+
+h2  {
+  font-size: 1.6rem;
+font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2rem;
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+}
+
+p  {
+  font-weight: 400;
+}
+
+/* Header */
+
+header {
+  height: 4rem;
+  position: fixed;
+  z-index: 100;
+  align-items: center;
+  width: 100%;
+  background-color: #004ACC;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.desktop {
+  display: flex;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.heading {
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  flex-grow: 1;
+  width: 50%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.heading span {
+  font-weight: bold;
+}
+
+.heading img {
+  margin: 0;
+}
+
+#academy {
+  font-weight: lighter;
+  opacity: .6;
+}
+
+header nav {
+  flex-grow: 1;
+  display: inline-flex;
+  width: 50%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav ul span {
+  padding-right: 1rem;
+  font-size: .95rem;
+  color: #E8E8E8;
+  transition: color 250ms ease-in;
+}
+
+header nav ul span:hover {
+  color: #3ECECC;
+}
+
+header nav ul span:last-child {
+  padding-right: 0px;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+}
+/* Main Banner */
+
+.banner {
+  width: 100%;
+  background-color: #fff;
+  align-items: center;
+  display: flex;
+}
+
+.banner-image {
+  width: 60%;
+  padding: 2rem 1.5rem;
+  display: inline-flex;
+}
+
+.banner-image img {
+  width: 100%;
+}
+
+.banner-info {
+  width: 40%;
+  line-height: 2rem;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: inline-flex;
+  padding-right: 0.5rem;
+}
+
+.banner h1 {
+  margin-bottom: 2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+
+.banner h2 {
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+
+.button {
+  text-align: center;
+  width: 95%;
+  color: #E8E8E8;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-radius: 4px;
+  background-color: #004ACC;
+  transition: background-color 500ms ease-out, color 500ms ease-out, transform 250ms ease-out 100ms;
+}
+
+.button:hover {
+  background-color: #34F6F2;
+  color: #949494;
+  transform: scale(1.06);
+}
+
+.button:active {
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+.button:visited {
+  background-color: #CCCECC;
+}
+
+.banner a {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 760px) {
+  .banner {
+    flex-direction: column;
+  }
+  .banner-image {
+    width: 100%;
+    padding: 0;
+  }
+  .banner-info {
+    width: 100%;
+    display: flex;
+  }
+  .banner h1 {
+    margin-left: 1rem;
+  }
+  .banner h2 {
+    margin-left: 1rem;
+  }
+  .button {
+    width: 94%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .button:hover {
+    transform: scale(1.02);
+  }
+}
+/* Secondary Banner */
+
+.banner-two {
+  width: 100%;
+  background-color: #E8E8E8;
+  display: flex;
+}
+
+.banner-img-two img {
+  width: 100%;
+}
+
+.banner-img-two {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 1.5rem;
+}
+
+.banner-info-two {
+  width: 40%;
+  border-left-color: #CCCECC;
+  border-left-style: solid;
+  border-left-width: thin;
+}
+
+.keep-practicing {
+  width: 100%;
+}
+
+.keep-practicing h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.keep-practicing p {
+  line-height: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.keep-practicing span {
+  font-weight: 300;
+}
+
+.info-box {
+  display: flex;
+  border-bottom-color: #CCCECC;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  flex-grow: 1;
+  transition: background-color 250ms;
+}
+
+@media only screen and (min-width: 760px) {
+.info-box:hover {
+  background-color: #004ACC;
+}
+}
+
+.info-box img {
+  padding: 1rem;
+  height: auto;
+  width: 35%;
+  z-index: 1;
+}
+
+.info {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-right: 1.6rem;
+}
+
+.info h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.info span {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+.info a {
+  color: #145C5B;
+  transition: color 250ms ease-in;
+}
+
+.info a:hover {
+  color: #3ECECC;
+}
+
+.info a:visited {
+  color: #CCCECC;
+}
+
+.mobile-info {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .desktop-info {
+    display: none;
+  }
+
+  .info a {
+    color: #004ACC;
+  }
+
+  .mobile-info {
+    display: block;
+  }
+
+  .banner-img-two {
+    display: none;
+  }
+
+  .banner-info-two {
+    width: 100%;
+    border: none;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .info-box {
+    border: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-box img {
+    width: 100%;
+  }
+
+  .info {
+    padding-left: 1rem;
+    align-self: flex-start;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    justify-content:
+  }
+}
+/* Learning */
+
+.learning {
+  width: 100%;
+  background-color: #2E2E2E;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-header {
+  display: flex;
+  width: 100%;
+  margin: 2rem 0;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 6rem;
+  padding-right: 4rem;
+}
+
+.course img {
+  height: auto;
+}
+
+.course {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  background-color: white;
+  width: 25%;
+  flex-grow: 1;
+  transition: transform 250ms ease-out 100ms;
+}
+
+.course:hover {
+  transform: scale(1.06);
+}
+
+.course-info {
+  padding-left: 1rem;
+  padding-right: .9rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+}
+
+.course-info h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.course-info p {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+#weight {
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 760px) {
+  .courses {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+  }
+  .info-header {
+    margin-bottom: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+  }
+  .course {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .course img {
+    display: none;
+  }
+  .course-info p {
+    display: none;
+  }
+  .course:hover {
+    transform: scale(1.02);
+  }
+}
+/* Thesis */
+
+.thesis {
+  display: flex;
+  background-color: #D4DBD8;
+}
+
+.thesis-video {
+  padding-left: 1.5rem;
+  padding-bottom: 2rem;
+  padding-right: 1.5rem;
+  width: 60%;
+  display: inline-flex;
+  padding-top: 6rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+video {
+  width: 100%;
+}
+
+.thesis-video-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.thesis-info {
+  padding-top: 6rem;
+  display: inline-flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.info-header-two {
+  display: flex;
+  width: 100%;
+  margin: 2rem 0;
+  justify-content: center;
+  font-size: 2rem;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+
+.info-header-two span {
+    font-family: "Raleway",sans-serif;
+}
+
+.thesis-video-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  font-weight: 700;
+}
+
+.thesis-video-info p {
+  line-height: 1.2rem;
+}
+
+.thesis-info-box img {
+  height: auto;
+  width: 35%;
+}
+
+.thesis-info-box {
+  display: flex;
+  width: 100%;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  flex-direction: row;
+  transition: background-color 250ms;
+}
+
+.thesis-info-box:hover {
+  background-color: #34F6F2;
+}
+
+.thesis-box-text {
+  display: flex;
+  width: 65%;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 1rem;
+  flex-grow: 1;
+  padding-right: 2rem;
+}
+
+.thesis-box-text h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.thesis-box-text p {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.mobile-thesis {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .desktop-thesis {
+    display: none;
+  }
+
+  .mobile-thesis {
+    display: block;
+  }
+
+  .thesis {
+    flex-direction: column;
+}
+
+.info-header-two {
+  position: relative;
+  margin-bottom: 0rem;
+}
+
+}
+/* Footer */
+
+footer {
+  display: flex;
+  border-top-color: #E8E8E8;
+  border-top-style: solid;
+  border-top-width: thin;
+  height: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  top: 4rem;
+  position: relative;
+  background-color: #004ACC;
+}
+
+.copyright {
+  display: inline-flex;
+  width: 50%;
+  opacity: 0.8;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #E8E8E8;
+}
+
+.terms {
+  display: inline-flex;
+  width: 50%;
+  flex-direction: row;
+  opacity: 0.8;
+  font-size: 0.8rem;
+  justify-content: flex-end;
+  font-weight: 300;
+}
+
+.terms ul {
+  display: flex;
+}
+
+.terms ul li {
+  color: #E8E8E8;
+  transition: color 250ms ease-in;
+}
+
+.terms ul li:hover {
+  color: #3ECECC;
+}
+
+.terms ul li:first-child {
+  padding-right: 0.8rem;
+}
+
+@media only screen and (max-width: 760px) {
+  .terms {
+    display: none;
+  }
+
+  .copyright {
+    margin-top: 4rem;
+    display: block;
+    width: 100%
+  }
+
+  footer {
+    padding-bottom: 2rem;
+  }
+}
